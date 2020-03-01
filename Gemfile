@@ -1,12 +1,12 @@
+gem 'mail', '~> 2.6', '>= 2.6.3'
+
+gem "pry", :groups => [:development, :test]
+
+
 source "https://rubygems.org"
-
-gem "hashie"
-gem "sinatra", "1.4.4"
-gem "octokit", "~>2.0"
-gem "awesome_print", :git => 'https://github.com/awesome-print/awesome_print/'
-
-gem "pry", :group => "development"
-
-group :test do
-  gem "rspec"
+gem "rspec"
+gem "sinatra"
+ 
+group :development do
+gem "pry"
 end
